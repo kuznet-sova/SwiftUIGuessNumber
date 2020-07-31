@@ -9,8 +9,13 @@
 import SwiftUI
 
 struct SliderView: View {
+    @State private var randomValue = Double.random(in: 0...100)
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Подвинь слайдер, как можно ближе к: \(lround(randomValue))")  
+        }
+        .padding()
     }
 }
 

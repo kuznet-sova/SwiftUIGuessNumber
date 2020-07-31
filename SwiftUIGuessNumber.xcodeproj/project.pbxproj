@@ -15,6 +15,7 @@
 		8CA10DA124D4B25B0024EE54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA10D9F24D4B25B0024EE54 /* LaunchScreen.storyboard */; };
 		8CA10DAD24D4B37B0024EE54 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA10DAC24D4B37B0024EE54 /* SliderView.swift */; };
 		8CA10DAF24D4B3BF0024EE54 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA10DAE24D4B3BF0024EE54 /* ButtonView.swift */; };
+		8CA10DB124D4B8100024EE54 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA10DB024D4B8100024EE54 /* ColorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8CA10DA224D4B25B0024EE54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CA10DAC24D4B37B0024EE54 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 		8CA10DAE24D4B3BF0024EE54 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		8CA10DB024D4B8100024EE54 /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			children = (
 				8CA10D9824D4B2550024EE54 /* ContentView.swift */,
 				8CA10DAC24D4B37B0024EE54 /* SliderView.swift */,
+				8CA10DB024D4B8100024EE54 /* ColorViewController.swift */,
 				8CA10DAE24D4B3BF0024EE54 /* ButtonView.swift */,
 			);
 			path = ViewContents;
@@ -188,6 +191,7 @@
 				8CA10DAD24D4B37B0024EE54 /* SliderView.swift in Sources */,
 				8CA10DAF24D4B3BF0024EE54 /* ButtonView.swift in Sources */,
 				8CA10D9724D4B2550024EE54 /* SceneDelegate.swift in Sources */,
+				8CA10DB124D4B8100024EE54 /* ColorViewController.swift in Sources */,
 				8CA10D9924D4B2550024EE54 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
