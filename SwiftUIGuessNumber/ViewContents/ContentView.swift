@@ -31,7 +31,7 @@ struct ContentView: View {
             Button(action: {
                 self.showAlert = true
             }) {
-                Text("Проверь меня")
+                Text("Проверить ответ")
             }
             .alert(isPresented: $showAlert) {
                 Alert(title: Text("Ваш результат"),
