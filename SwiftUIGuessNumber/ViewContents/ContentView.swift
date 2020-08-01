@@ -12,6 +12,7 @@ struct ContentView: View {
     @State var value: Double = 0
     @State var alpha: CGFloat = 1
     @State var randomValue = Double.random(in: 0...100)
+    @State var showAlert = false
     
     var body: some View {
         VStack {
@@ -25,7 +26,26 @@ struct ContentView: View {
             }) {
                 Text("Начать заново")
             }
+            . padding()
+            
+            Button(action: {
+                self.showAlert = true
+            }) {
+                Text("Проверь меня")
+            }
+            .alert(isPresented: $showAlert) {
+                Alert(title: Text("Ваш результат"),
+                  message: Text("\(self.computeScore())"),
+                  dismissButton: .cancel(Text("Ок")) {
+                    self.showAlert = false
+                })
+            }
         }
+    }
+    
+    private func computeScore() -> Int {
+        let difference = abs(randomValue - value)
+        return Int(100 - difference)
     }
 }
 
