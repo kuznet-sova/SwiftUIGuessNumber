@@ -18,6 +18,7 @@ struct UiKitSlider: UIViewRepresentable {
         slider.maximumValue = 100
         slider.value = Float(value)
         slider.alpha = alpha
+        slider.thumbTintColor = #colorLiteral(red: 0.03921568627, green: 0.5176470588, blue: 1, alpha: 1)
         
         slider.addTarget(context.coordinator,
                          action: #selector(Coordinator.valueChanged),
