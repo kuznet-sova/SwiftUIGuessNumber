@@ -11,8 +11,8 @@ import SwiftUI
 struct ContentView: View {
     @State var value: Double = 0
     @State var alpha: CGFloat = 1
-    @State var randomValue = Double.random(in: 0...100)
-    @State var showAlert = false
+    @State private var randomValue = Double.random(in: 0...100)
+    @State private var showAlert = false
     
     var body: some View {
         VStack {
