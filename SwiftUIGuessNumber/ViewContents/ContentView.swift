@@ -9,13 +9,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var value: Double = 0
+    @State var alpha: CGFloat = 1
+    
     var body: some View {
-        Text("Hello, World!")
+        SliderView(value: $value, alpha: $alpha)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(value: 100, alpha: 1)
     }
 }

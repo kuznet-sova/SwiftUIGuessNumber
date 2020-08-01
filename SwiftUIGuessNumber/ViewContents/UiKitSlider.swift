@@ -15,7 +15,7 @@ struct UiKitSlider: UIViewRepresentable {
     func makeUIView(context: Context) -> UISlider {
         let slider = UISlider(frame: .zero)
         slider.minimumValue = 0
-        slider.maximumValue = 255
+        slider.maximumValue = 100
         slider.value = Float(value)
         slider.alpha = alpha
         
