@@ -11,9 +11,21 @@ import SwiftUI
 struct ContentView: View {
     @State var value: Double = 0
     @State var alpha: CGFloat = 1
+    @State var randomValue = Double.random(in: 0...100)
     
     var body: some View {
-        SliderView(value: $value, alpha: $alpha)
+        VStack {
+            Text("Подвинь слайдер, как можно ближе к: \(lround(randomValue))")
+            
+            SliderView(value: $value, alpha: $alpha)
+            
+            Button(action: {
+                self.value = Double.random(in: 0...100)
+                self.randomValue = Double.random(in: 0...100)
+            }) {
+                Text("Начать заново")
+            }
+        }
     }
 }
 
