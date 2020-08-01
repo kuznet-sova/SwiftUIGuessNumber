@@ -21,24 +21,24 @@ struct ContentView: View {
             SliderView(value: $value, alpha: $alpha)
             
             Button(action: {
-                self.value = Double.random(in: 0...100)
-                self.randomValue = Double.random(in: 0...100)
-            }) {
-                Text("Начать заново")
-            }
-            . padding()
-            
-            Button(action: {
                 self.showAlert = true
             }) {
                 Text("Проверить ответ")
             }
             .alert(isPresented: $showAlert) {
                 Alert(title: Text("Ваш результат"),
-                  message: Text("\(self.computeScore())"),
+                  message: Text("\(computeScore())"),
                   dismissButton: .cancel(Text("Ок")) {
                     self.showAlert = false
                 })
+            }
+            . padding()
+            
+            Button(action: {
+                self.value = Double.random(in: 0...100)
+                self.randomValue = Double.random(in: 0...100)
+            }) {
+                Text("Начать заново")
             }
         }
     }
