@@ -21,8 +21,13 @@ struct ContentView: View {
         VStack {
             Text("Подвинь слайдер, как можно ближе к: \(lround(randomValue))")
             
-            SliderView(value: $value)
-                .opacity(max(0, alpha))
+            HStack {
+                Text("0")
+                UiKitSlider(value: $value)
+                    .opacity(max(0, alpha))
+                Text("100")
+            }
+            .padding()
             
             Button(action: {
                 self.showAlert = true
